@@ -272,7 +272,7 @@ print(is_leap(1800))#false
 print(is_leap(2500))#false
 print(is_leap(2300))#false
 
-#Quiz  
+#Quiz #6 
 #List
 #What is the maximum difference between the integer pairs in an list
 #[i, j, i,j,] starting at 0 position
@@ -358,6 +358,23 @@ def max_difference(nums):
 nums = [1, 2, 3, 8, 10]
 print(max_difference(nums))#output = 6, this is correct.
 
+#REFERENCE A CSV FILE IN CODE
+## Read the csv file
+#Get the corpus of text
+#The combined dataset of reviews has been saved in a Google drive belonging to Udacity. You can download it from there.
+#path = tf.keras.utils.get_file('reviews.csv',
+#                              'https://drive.google.com/uc?id=13ySLC_ue6Umt9RJYSeM2t-V0kCv-4C-P')
+#print (path)
+#dataset = pd.read_csv(path)
+#CHECK THIS TENSORFLOW COLAB
+#https://colab.research.google.com/drive/1oB9-IBQTo8ac8nPZTwkdDK22Vzm1rN9X#scrollTo=kBpFip-X69Hf
+
+#MACHINE LEARNING QUIZZES
+#MACHINE LEARNING INTERVIEW CHECKLIST 
+#SEVEN STEP PROCESS FOR SUCCESSFUL MACHINE LEARNING INTERVIEW
+#CLARIFYING THE QUESTION, GENERATING INPUTS AND OUTPUTS, GENERATING TEST CASES,
+# BRAINSTORMING, RUNTIME ANALYSIS, CODING, DEBUGGING
+#https://docs.google.com/document/d/e/2PACX-1vSYBV2l-IUU8rFPa6ldB5CSCrrnz_czoVMGN5G2hRRjfUjlG82a-tif0sO4QUF_MBkgeOj6U44ACOqM/pub
 #Quiz  
 #Spam Classfication on email algorithm using Machine Learning
 
@@ -368,3 +385,278 @@ print(max_difference(nums))#output = 6, this is correct.
 #Naive Bayes can handle checking both text and binary in an algorithm
 
 #https://docs.google.com/document/d/e/2PACX-1vQa4quKMxBWnMe42emXY6P57p-2zJD3hcwCUKlQkZfEf5mI5MzRyxsjwMzOG7orNb55qYeKWRDI65zs/pub
+
+#QUIZ - RAINY WEATHER PROBABILITY USING BAYES RULE
+#OVER THE LAST MONTH, OVER 20 OF THE DAYS WERE CLOUDY
+#OUT OF THOSE 20 DAYS, IN 5 DAYS IT ACTUALLY RAINED
+#IF IT IS CLOUDY OUTSIDE, WHAT IS THE PROBABILITY THAT IT WILL RAIN
+#P(A/B) = (P(B/A)*P(A))/P(B)
+#MONTH HAS 30 DAYS
+#CLOUDY WEATHER = 20 DAYS/30 DAYS
+#RAINY WEATHER = 5 DAYS DURING CLOUDY DAYS
+#C = CLOUDY
+#R= RAINY
+#P(R/C) = (P(C/R)*P(R))/P(C)
+#P(R/C) = 5/20 = 1/4
+#P(C)=20/30 = 2/3
+#P(R) = 5/30 = 1/6
+#P(C/R)*P(R)/P(C) = 
+
+
+#QUIZ - IDENTIFY FISH
+#QUIZ - PLAIGARISM DETECTION
+#QUIZ - Reduce Data Dimensionality
+
+# 6 - FIND NUMBER OF ISLANDS IN A MATRIX
+
+from collections import
+
+M =([1,0,1],[0,1,0])
+
+def islandcounter(M):
+    if (M == 0 or M == [[]]):
+        return 0
+    islands = 0
+    c = len(M[0])
+    r = len(M)
+    for i in range(0,r):
+        for j in range(0,c):
+            if (M[i][j]==1):
+                islands += 1
+#                findpartsofisland(M,i,j,r,c)
+    return islands  
+
+print(islandcounter(M))#output is 3
+
+def findpartsofisland(m,i,j,r,c):
+
+    q = queue
+    q.append([i.j])
+    while(len(q)!=0):
+        i=q.pop()
+        x=i[0]
+        y=i[1]
+        if (M([x][y]==1):
+            M[x][y]==2
+
+defappendif(q,r,c,x,y):
+#    if (x>0) and 
+#CANNOT READ ON THE SCREEN THE REST OF THE CODE
+
+#PHONE INTERVIEW QUESTIONS FOR A SDEE POSITION 
+#https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions
+
+
+#TIC TAC TOE GAME
+
+#QUIZ 7
+
+#list comprehensions! 
+#You are given three integers X,Y,Z,N  and representing the dimensions of a cuboid along with an integer N . 
+#Print a list of all possible coordinates given by I,J,K on a 3D grid where the sum of  is not equal to I+J+K IS NOT EQUAL TO N . 
+#Here, 0<=I<=X, 0<=J<=Y. 0<=K<=Z. 
+#Please use list comprehensions rather than multiple loops, as a learning exercise.
+#Example X=1, Y=1, Z=2, N=3
+##[[0,0,0], [0,0,1], [0,0,2], [0,1,0], [0,1,1], [0,1,2], [1,0,0], [1,0,1], [1,0,2], [1,1,0], [1,1,1], [1,1,2]]
+
+#Print an array of the elements that do not sum to n=3.
+
+#[[0,0,0], [0,0,1], [0,0,2], [0,1,0], [0,1,1], [1,0,0], [1,0,1], [1,1,0], [1,1,2]]#not sure about the last one. 
+
+
+#Input Format
+
+x = int(input("Enter value of x: "))
+y = int(input("Enter value of y: "))
+z = int(input("Enter value of z: "))
+n = int(input("Enter value of n: "))
+
+three_d_list = [[0,0,0], [0,0,1], [0,0,2], [0,1,0], [0,1,1], [0,1,2], [1,0,0], [1,0,1], [1,0,2], [1,1,0], [1,1,1], [1,1,2]]
+
+print (three_d_list[0])#output is [0, 0, 0] 
+print (len(three_d_list))#counts the number of elements in the list
+print(sum(len(v) for v in three_d_list))#counts the total number of items in the list
+
+#THIS FUNCTION DOES NOT EXECUTE
+def sum_and_check(three_d_list, n):
+#    """
+#    Sums elements in a 3D list and prints elements where the sum is not equal to n.
+#
+#   Args:
+#        lst: A 3D list of numbers.
+#        n: The number to compare the sum against.
+#   """
+
+    for i in range(len(three_d_list)):
+        for j in range(len(three_d_list[i])):
+            for k in range(len(three_d_list[i][j])):
+                current_element = three_d_list[i][j][k]
+                # Calculate sum of the current element's "coordinates"
+                element_sum = i + j + k
+                if element_sum != n:
+                    print(f"Element at index [{i}][{j}][{k}] = {current_element}, sum of indices = {element_sum} (not equal to {n})")
+                    print(current_element)
+
+    return(current_element)
+
+#b = [sum(x) for x in matrix]
+#if b!= n:
+#    print(matrix[x])#output is [0,0,1]
+
+# Initialize a result list with zeros
+#result_list = [0] * len(matrix[0])
+
+# Add elements from each list
+#for l in matrix:
+#    for i in range(len(l)):
+#       result_list[i] += l[i]
+#       if result_list[i] != n:
+
+#            print(matrix[i])
+
+
+
+#for i in range(len(matrix)):
+#   for j in range(len(matrix[i])):
+#        for k in range(len(matrix[i][j])):
+#            sum=i+j+k
+#            if sum != n:
+#                print(matrix[i][j][k])
+
+#for i in range(len(matrix[0])) and j in range(len(matrix[1])) and k in range(len(matrix[2])):
+#   sum=i+j+k
+#  if sum != n:
+#         print(matrix)   
+
+#b = [sum(x) for x in matrix]
+#print(b)#output is [0, 1, 2, 1, 2, 3, 1, 2, 3, 2, 3, 4]
+
+
+
+#THIS CODE WORKS!
+#x = [i for i in range(x+1)]
+#y = [i for i in range(y+1)]
+#z = [i for i in range(z+1)]
+# for each combination of i,j,k will form a sublist in the final_list, and sum of i,j,k will not equal to n
+#final_list = [[i,j,k]for i in x for j in y for k in z if (i+j+k)!=n]
+#print(final_list)#inputs = 1,1,1,2 output is [[0, 0, 0], [0, 0, 1], [0, 1, 0], [1, 0, 0], [1, 1, 1]]
+
+
+#list comprehension for 3D matrix with sum of i j and k values python
+
+
+#QUIZ #8
+#Given the participants' score sheet for your University Sports Day, 
+#you are required to find the runner-up score. 
+#You are given  scores. Store them in a list and find the score of the runner-up.
+
+#Input Format
+#The first line contains N. 
+#The second line contains an array[]  of N integers each separated by a space.
+
+#OUTPUT FORMAT
+#Print the runner-up score.
+
+#Given list is [2,3,6, 6,5]. The maximum score is 6, second maximum is 6. 
+#Hence, we print 5 as the runner-up score.
+
+n = int(input())
+arr = map(int, input().split())
+
+#n = int(input("Enter the first number: "))
+arr = [2,3,6,6,5]
+
+#n = int(input())
+#arr = map(int, input().split())
+
+largest=max(arr)
+print(largest)
+
+array = [2,3,6,6,5]
+
+#THIS CODE WORKS
+# Initialize largest (max1)
+# and second largest (max2) to negative infinity
+max1 = max2 = -100 #float('-inf')use negative 100
+
+# Loop through each number in list
+for n in array:
+  
+    # If the current number is greater 
+    # than largest found so far
+    if n > max1:
+        #when n=0, for this array, the value 2 is greater than max1
+        # Update second largest to the previous largest
+        max2 = max1  
+        #max2 = negative 100
+        # Update largest to the current number
+        max1 = n     
+        #max1 becomes the array value 2
+    # If current number is less than largest
+    # but greater than second largest
+    elif n > max2 and n != max1:
+    #when n=0, for this array,the array value 2is greater than -100, but the array value is equal to max1 which is 2
+     # Update second largest to current number
+     #this does not get updated when the array value is 2.
+        max2 = n  
+
+print(max2)
+
+#QUIZ 9
+#SECOND LOWEST GRADE
+
+#Given the names and grades for each student in a class of N students, 
+#store them in a nested list and print the name(s) of any student(s) 
+#having the second lowest grade.
+#Note: If there are multiple students with the second lowest grade, 
+#order their names alphabetically and print each name on a new line.
+#Example
+#Records = [[“chi”, 20.0], [“beta”, 50.0], [“alpha”, 50.0]]
+
+#The ordered list of scores is [20.0, 50.0] , so the second lowest score is 50.0. 
+#There are two students with that score: [“beta”, “alpha”]. 
+#Ordered alphabetically, the names are printed as:
+#alpha
+#beta
+
+#Input Format
+#The first line contains an integer, N the number of students. 
+#The  subsequent lines describe each student over  lines. 
+#- The first line contains a student's name. 
+#- The second line contains their grade. 
+#Constraints
+#There will always be one or more students having the second lowest grade. 
+#Output Format
+#Print the name(s) of any student(s) having the second lowest grade in.
+#If there are multiple students, order their names alphabetically and print each one on a new line.
+
+#Sample Input 
+
+#5
+#Harry
+#37.21
+#Berry
+#37.21
+#Tina
+#37.2
+#Akriti
+#41
+#Harsh
+#39
+
+#Explanation 
+#There are 5 students in this class whose names and grades are assembled to build the following list:
+
+#python students = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]
+
+#The lowest grade of 37.2 belongs to Tina. 
+
+#The second lowest grade of 37.21 belongs to both Harry and Berry, 
+#so we order their names alphabetically and print each name on a new line.
+
+#Berry
+#Harry
+
+
+
+
